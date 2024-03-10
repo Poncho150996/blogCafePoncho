@@ -10,6 +10,7 @@
     --primario: #784D3C;
     --blanco: #fff;
     --negro: #000;
+    --gris:#e1e1e1;
 }
 
 html{
@@ -100,9 +101,37 @@ img{
     font-weight: bold; /*700*/
 }
 
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type{ /*Seleccionar el ultimo elemento de la clase*/
+    border: none;
+    margin-bottom: 0;
+}
 
+.boton{
+    font-family: var(--fuenteHeading); /*Fuente del texto*/
+    color: var(--blanco); /*Color del texto*/
+    text-align: center; /*Para que aline el texto en el centro horizontal*/
+    padding: 1rem 3rem; /*1rem de arriba y abajo y 3 rem de izquierda y derecha*/
+    font-size: 1.8rem; /*Para darle tamaño al texto*/
+    text-transform:uppercase;/*Para transformar el texto en mayusculas*/
+    font-weight: bold; /*Para hacer el texto en negritas*/
+    margin-bottom: 2rem; /*Para mantener el espacio entre blogs*/
+    display: block; /*Cuando sea movil debe de ser completa la pantalla*/
+}
 
+.boton--primario{
+    background-color: var(--negro);
+
+}
 @media (min-width:780px){ /*AQUI APLICA CUANDO SEA GRANDE*/
+    .boton{
+        display: inline-block;
+        margin-bottom: 2rem;/*No funciona con inline se debe de colocar inline-block*/
+    }
+    
     .barra{
         display: flex; /*PARA INICIALIZAR EL FLEX*/
         justify-content: space-between; /*Para alinear horizontalmente*/
