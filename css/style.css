@@ -100,6 +100,8 @@ img{
     font-weight: bold; /*700*/
 }
 
+
+
 @media (min-width:780px){ /*AQUI APLICA CUANDO SEA GRANDE*/
     .barra{
         display: flex; /*PARA INICIALIZAR EL FLEX*/
@@ -114,5 +116,11 @@ img{
 
     .header__texto{
         margin-top: 15rem;
+    }
+
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
     }
 }
