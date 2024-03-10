@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Para cargar elementos externos -->
+    <!-- <link rel="preload" href="URL" as="font" crossorigin="crossorigin"> -->
+
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="img/banner.jpg" as="imagen">
+
+    <!-- prefech -->
+    <link rel="prefech" href="nosotros.html" as="Document">
 </head>
 <body>
     <header class="header">
@@ -30,10 +42,10 @@
 
     <div class="contenedor contenido-principal">
         <main class="blog">
-            <h3>Nuestro Blog</h3>
+            <h3 class="centrar-texto">Nuestro Blog</h3>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="Imagen del blog">
+                    <img loading="lazy" src="img/blog1.jpg" alt="Imagen del blog">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Tipos de grano de café</h4>
@@ -43,7 +55,7 @@
             </article>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="Imagen del blog">
+                    <img loading="lazy" src="img/blog2.jpg" alt="Imagen del blog">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">3 deliciosas recetas de café</h4>
@@ -53,7 +65,7 @@
             </article>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog3.jpg" alt="Imagen del blog">
+                    <img loading="lazy" src="img/blog3.jpg" alt="Imagen del blog">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Beneficios del café</h4>
@@ -63,7 +75,7 @@
             </article>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="Imagen del blog">
+                    <img loading="lazy" src="img/blog2.jpg" alt="Imagen del blog">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Como afecta el café en tu cuerpo</h4>
@@ -73,7 +85,7 @@
             </article>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="Imagen del blog">
+                    <img loading="lazy" src="img/blog1.jpg" alt="Imagen del blog">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Como se realiza el café</h4>
