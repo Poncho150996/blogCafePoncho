@@ -68,3 +68,51 @@ img{
 .centrar-texto{
     text-align: center;
 }
+
+.header{
+    background-image: url('../img/banner.jpg');
+    height: 60rem; /*Para que se vea la imagen de fondo*/
+    background-size: cover;/*Para que cubra toda la imagen*/
+    background-repeat: no-repeat;/*Para que la imagen no se repita*/
+    background-position: center center; /*Doble center para que se centre vertical y horizontal esto es cuando es cover*/
+}
+
+.header__texto{
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+}
+
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color:var(--blanco)
+}
+
+.logo{
+    color:var(--blanco)
+}
+.logo__nombre{
+    font-weight: normal;/*400*/
+}
+.logo__bold{
+    font-weight: bold; /*700*/
+}
+
+@media (min-width:780px){ /*AQUI APLICA CUANDO SEA GRANDE*/
+    .barra{
+        display: flex; /*PARA INICIALIZAR EL FLEX*/
+        justify-content: space-between; /*Para alinear horizontalmente*/
+        align-items: center;/*Para alinear verticalmente*/
+    }
+    
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .header__texto{
+        margin-top: 15rem;
+    }
+}
