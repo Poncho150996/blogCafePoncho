@@ -209,9 +209,14 @@ img{
 .cursos-talleres__precio{
     font-weight: normal;
 }
-.cursos-talleres__descripcion{
+.cursos-talleres__descripcion,
+.cont-entrada__informacion{
     font-family: var(--fuenteParrafos);
     font-weight: normal;
+}
+.cont-entrada{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 @media (min-width:780px){ /*AQUI APLICA CUANDO SEA GRANDE*/
@@ -260,4 +265,5 @@ img{
         grid-template-columns: 1fr 2fr;
         gap: 2rem;
     }
+   
 }
