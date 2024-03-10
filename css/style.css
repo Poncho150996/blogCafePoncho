@@ -31,6 +31,7 @@ body{
 .contenedor{
     max-width: 120rem;
     width: 90%;
+    /*width:min(90%,120rem); es lo mismo de los 2 de arriba*/
     margin: 0 auto;
 }
 
@@ -159,7 +160,8 @@ img{
 }
 
 .footer{
-    padding: 5rem 3rem;
+    margin-top: 6rem;
+    padding-bottom: 3rem;
     background-color: var(--negro);
 }
 .navegacion{
@@ -172,6 +174,10 @@ img{
 
 .header__texto{
     margin-top: 15rem;
+}
+
+.barra{
+    padding-top: 3rem;
 }
 
 @media (min-width:780px){ /*AQUI APLICA CUANDO SEA GRANDE*/
