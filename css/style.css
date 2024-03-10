@@ -132,6 +132,11 @@ img{
 
 .cursos{
     list-style: none;
+    border-bottom: 1px solid var(--gris);
+    padding-bottom: 1rem;
+}
+.cursos:last-of-type{
+    border-bottom: none;
 }
 
 .widget-curso{
@@ -153,6 +158,22 @@ img{
     font-weight: normal;
 }
 
+.footer{
+    padding: 5rem 3rem;
+    background-color: var(--negro);
+}
+.navegacion{
+    padding-top: 3rem;
+}
+
+.sidebar{
+    padding-top: 2rem;
+}
+
+.header__texto{
+    margin-top: 15rem;
+}
+
 @media (min-width:780px){ /*AQUI APLICA CUANDO SEA GRANDE*/
     .boton{
         display: inline-block;
@@ -168,10 +189,7 @@ img{
     .navegacion{
         display: flex;
         gap: 2rem;
-    }
-
-    .header__texto{
-        margin-top: 15rem;
+        padding-top: 0;
     }
 
     .contenido-principal{
