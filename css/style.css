@@ -122,6 +122,11 @@ img{
     font-weight: bold; /*Para hacer el texto en negritas*/
     margin-bottom: 2rem; /*Para mantener el espacio entre blogs*/
     display: block; /*Cuando sea movil debe de ser completa la pantalla*/
+    border: none;
+}
+
+.boton:hover{
+   cursor:pointer;
 }
 
 .boton--primario{
@@ -218,6 +223,45 @@ img{
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
+
+
+
+.fondo-contacto{
+    background-image: url('../img/contacto.jpg');
+    background-size: cover;/*Para que cubra toda la imagen*/
+    background-repeat: no-repeat;/*Para que la imagen no se repita*/
+    background-position: center center;
+    height: 40rem; /*Para que se vea la imagen de fondo*/
+}
+
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.input{
+    display: flex;
+    /* gap: 2rem; */
+    margin: 1rem 0;
+    align-items: center;
+}
+
+.input__label{
+    text-align: right;
+    padding-right: 2rem;
+    flex: 0 0 9rem;
+}
+.input__field{
+    flex: 1;
+    padding: .5rem;
+    border: 1px solid var(--gris);
+    border-radius: .5rem;
+}
+.input__field--textarea{
+    height: 20rem;
+}
+
 
 @media (min-width:780px){ /*AQUI APLICA CUANDO SEA GRANDE*/
     .boton{
