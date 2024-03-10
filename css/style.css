@@ -184,6 +184,36 @@ img{
     font-family: var(--fuenteParrafos);
 }
 
+.cont-cursos{
+    margin-top: 5rem;
+}
+
+.cursos-talleres{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+    font-family: var(--fuenteHeading);
+    font-size: 2rem;
+}
+
+.cursos-talleres:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.cursos-talleres:first-of-type{
+    margin-top: 5rem;
+}
+
+.cursos-talleres__label{
+    font-weight: bold;
+}
+.cursos-talleres__precio{
+    font-weight: normal;
+}
+.cursos-talleres__descripcion{
+    font-family: var(--fuenteParrafos);
+    font-weight: normal;
+}
+
 @media (min-width:780px){ /*AQUI APLICA CUANDO SEA GRANDE*/
     .boton{
         display: inline-block;
@@ -225,4 +255,9 @@ img{
         flex-basis: calc(50% - 1rem );
     }
     
+    .cursos-talleres{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
 }
