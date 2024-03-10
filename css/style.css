@@ -180,6 +180,10 @@ img{
     padding-top: 3rem;
 }
 
+.sobre-nosotros__texto{
+    font-family: var(--fuenteParrafos);
+}
+
 @media (min-width:780px){ /*AQUI APLICA CUANDO SEA GRANDE*/
     .boton{
         display: inline-block;
@@ -203,4 +207,22 @@ img{
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem;
     }
+
+    /* .sobre-nosotros{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    } */
+    .sobre-nosotros{
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto{
+        /* flex-basis: 50%; */
+        flex-basis: calc(50% - 1rem );
+    }
+    
 }
